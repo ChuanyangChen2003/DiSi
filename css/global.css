@@ -3,26 +3,19 @@ body{
 	padding: 0;
 	margin: 0;
 	padding-top: 100px;
-	background: url(../img/background.jpg) no-repeat -300px -300px;
-	background: -webkit-linear-gradient(to right, #FFEDBC, #ED4264);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #FFEDBC, #ED4264); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: url('https://vichien-public.oss-cn-guangzhou.aliyuncs.com/DISI%20App/icon/background.jpg')no-repeat;
+	background-size: 100vw 100vh;
 }
 
 .about_text{
 	width: 450px;
 }
 
-@media only screen and (max-width:1500px) {
-	body{
-		background: url(../img/background.jpg) no-repeat -300px -300px;
-	}
-}
-
 @media only screen and (max-width:1000px) {
 	body{
-		background: url(../img/background.jpg) no-repeat -500px -300px;
-		padding-left: 10px;
-		padding-right: 10px;
+		background: url('https://vichien-public.oss-cn-guangzhou.aliyuncs.com/DISI%20App/icon/background.jpg')no-repeat;	
+		background-size:200% 100vh;
+		background-position-x:50% ;
 	}
 	.about_text{
 		width: 100%;
@@ -60,7 +53,8 @@ hr{
 #lyric{
 	width: 300px;
 	text-align: center;
-	height: 300px;
+	text-shadow: white 0px 0px 5px;
+	height: 330px;
 	overflow: scroll;
 	color: #21252b;
 }
@@ -68,7 +62,7 @@ hr{
 #staff{
 	margin-top: 12px;
 	width: 280px;
-	height: 300px;
+	height: 330px;
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
@@ -79,6 +73,7 @@ hr{
 
 /* 音乐展示模块 */
 #music_block{
+	width: 350px;
 	padding-top: 10px;
 	height: 400px;
 	overflow: scroll;
@@ -90,6 +85,7 @@ hr{
 
 /* 渐变颜色的横线 */
 .line{
+	margin-top: 2px;
 	width:320px;
 	height:1px;
 	background: -webkit-linear-gradient(left, #fbe8b7 -4%,#f9d8b9 50%,#fbe8b7 100%);
@@ -194,6 +190,28 @@ hr{
 }
 #music_pages_btn button:active{
 	background-color: rgba(237, 181, 115,1);
+}
+#music_pages_btn button:focus{
+    outline: none;
+}
+#music_pages_btn button:visited{
+	outline: none;
+}
+
+.search_input{
+	width: 295px;
+	background:rgba(255,255,255,0.8);
+	outline:none;
+	border:1px solid rgb(83, 131, 236);
+	line-height: 30px;
+	border-radius: 30px;
+	margin-bottom: 15px;
+	padding-left: 15px;
+}
+.search_input[type="text"]:focus{
+border: 1px solid rgb(83, 131, 236);
+background: #fff;
+outline: none;
 }
 
 /* 背景色 */
